@@ -1,1 +1,28 @@
+import os 
+os.system ("cls || clear")
+
+def soma(a, b):
+    soma = a + b
+    print(soma)
+
+def subtração(a, b):
+    subtração = a - b
+    print(subtração)
+
+def divisão(a, b):
+    divisão = a / b
+    print(divisão)
+
+def multi(a, b):
+    multi = a * b
+    print(multi)
+
+#Programa Principal
+
+soma(5, 5)
+subtração(10, 5)
+divisão(10, 5)
+multi(5, 10)
+
+
 
