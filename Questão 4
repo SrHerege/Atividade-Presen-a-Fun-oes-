@@ -1,3 +1,9 @@
+'''
+Crie um programa que leia um número e informe por meio
+de uma função se o número informado é par ou ímpar.
+'''
+
+
 import os
 os.system ("cls || clear")
 
