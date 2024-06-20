@@ -1,0 +1,23 @@
+import os
+os.system ("cls || clear")
+
+def tabuada (a):
+    for i in range(10):
+        print(f"{numero} x {i+1} = {numero * (i+1)}") #+1 é um contador para chegar a 10, pois começa de 0
+
+
+#Programa principal
+i = 0
+
+numero = int(input("Digite um numero: "))
+tabuada(i)
+
+
+
+
+
+    
+
+
+
+    
