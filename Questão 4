@@ -1,0 +1,14 @@
+import os
+os.system ("cls || clear")
+
+def resultado(): 
+    if numero % 2 == 0:
+        print("O numero é par!")
+    else: 
+        print("O numero é impar!")
+
+
+#Programa
+numero = int(input("Digite um numero: "))
+resultado()
+
