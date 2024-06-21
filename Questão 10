@@ -1,0 +1,25 @@
+'''
+Escreva um programa que permita ler 3 notas de um aluno e
+informe por meio de funções a média;
+'''
+
+import os
+os.system("cls || clear")
+
+def funçao_notas(notas):
+    soma = sum(lista_notas)
+    media = soma / 3
+    print(f"A media do aluno é: {media}")
+    return media
+
+
+lista_notas = []
+
+for i in range(3): 
+    notas = int(input(f"Digite a {i+1}º nota: "))
+    lista_notas.append(notas)
+
+
+media = funçao_notas(notas)
+
+
