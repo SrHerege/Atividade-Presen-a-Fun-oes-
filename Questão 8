@@ -1,0 +1,43 @@
+'''
+Escreva um programa que permita ler 2 notas de um aluno e:
+- Informe por meio de uma função a média;
+- Informe por meio de uma função se a média for maior
+ou igual a 7, o aluno estará aprovado, caso contrário, estará
+reprovado.
+'''
+import os
+os.system ("cls || clear")
+
+
+def funçao_media(notas):
+  soma = sum(lista_notas)
+  media = soma / 2
+  return media
+
+
+def funçao_status(media):
+   if media >= 7:
+      print("O aluno está aprovado!")
+   else: 
+        print("O aluno está reprovado!")
+
+
+lista_notas = []
+
+for i in range(2):
+    notas = int(input(f"Digite a {i+1}º nota: "))
+    lista_notas.append(notas)
+
+
+media = funçao_media(notas)
+
+status = funçao_status(media)
+
+
+print(f"A media do aluno é: {media}")
+
+
+
+
+
+
