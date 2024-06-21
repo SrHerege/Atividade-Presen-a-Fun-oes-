@@ -1,0 +1,40 @@
+'''''
+Crie um programa que leia 6 números e informe por meio de duas
+funções:
+- Uma função para retornar a quantidade de números pares;
+- Uma função para retornar a quantidade de números ímpares;
+''' 
+import os
+os.system ("cls || clear")
+
+
+def contador_pares(numeros):
+    pares = 0
+    for numero in numeros:
+        if numero % 2 == 0:
+            pares += 1
+    return pares  #return tem que estar alinhado ao for
+        
+
+def contador_impares(numeros):
+    impares = 0
+    for numero in numeros:
+        if numero % 2 != 0:   # % 2 != 0 usado para contagem apenas de impares, quando nao é possivel usar o else pra chegar até ele
+            impares += 1      # += contador
+    return impares   #return tem que estar alinhado ao for
+        
+
+numeros = []
+
+for i in range(6):
+    numero = int(input(f"Digite o {i+1}º numero: "))
+    numeros.append(numero)
+
+
+pares = contador_pares(numeros)
+impares = contador_impares(numeros)
+
+
+print(f"Quantidade de pares informados: {pares}")
+print(f"Quantidade de impares informados: {impares}")
+
